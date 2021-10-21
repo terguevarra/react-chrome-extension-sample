@@ -1,0 +1,33 @@
+{
+  "name": "React Chrome Extension Sample",
+  "description": "React Chrome Extension Sample",
+  "version": "1.10",
+  "manifest_version": 2,
+  "permissions": [
+    "<all_urls>",
+    "tabs",
+    "contextMenus",
+    "notifications",
+    "background"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Open the popup",
+    "default_icon": {
+      "16": "icon_192x192.png",
+      "32": "icon_192x192.png",
+      "48": "icon_192x192.png",
+      "128": "icon_192x192.png"
+    }
+  },
+  "icons": {
+    "16": "icon_192x192.png",
+    "32": "icon_192x192.png",
+    "48": "icon_192x192.png",
+    "128": "icon_192x192.png"
+  },
+  "content_security_policy": "script-src 'self' 'sha256-f+B9VGMPd4KjgObKXieS1bi0u6HLeUvRnJx+Ia8hbws=';"
+}
